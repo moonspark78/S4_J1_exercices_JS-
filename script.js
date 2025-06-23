@@ -9,6 +9,9 @@ const ampoule = document.querySelector('.light-bulb');
 //    - Utiliser addEventListener() avec l'événement 'click'
 // 3. Au clic, basculer la classe 'on' sur l'ampoule
 //    - Utiliser classList.toggle() pour ajouter/retirer la classe
+button.addEventListener('click', () => {
+    ampoule.classList.toggle('on');
+});
 
 // === Exercice 2 - Afficheur de mot mystère ===
 // TODO:
