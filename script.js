@@ -16,8 +16,15 @@ button.addEventListener('click', () => {
 // === Exercice 2 - Afficheur de mot mystère ===
 // TODO:
 // 1. Cibler l'input, le bouton et le paragraphe de résultat
+const input = document.querySelector('#secret-input');
+const button2 = document.querySelector('#show-btn');
+const resultParagraph = document.querySelector('#result');
 // 2. Ajouter un écouteur d'événement sur le bouton
 // 3. Au clic, récupérer la valeur de l'input et l'afficher dans le paragraphe
+button2.addEventListener('click', () => {
+    const secretWord = input.value;
+    resultParagraph.textContent = `Le mot mystère est : ${secretWord}`;
+});
 
 
 
