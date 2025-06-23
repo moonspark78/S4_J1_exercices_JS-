@@ -33,8 +33,22 @@ button2.addEventListener('click', () => {
 // 1. Cibler les boutons et la zone d'affichage
 const moodButtons = document.querySelectorAll('.mood-btn')
 const moodDisplay = document.querySelector('#mood-display')
-// 2. Ajouter des écouteurs d'événements sur chaque bouton
-// 3. Au clic, modifier le texte selon l'humeur sélectionnée
+// 2. Ajouter un écouteur sur chaque bouton
+moodButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    // 3. Lire la valeur de data-mood
+    const mood = button.dataset.mood
+
+    // 4. Modifier le texte selon l’humeur
+    if (mood === 'happy') {
+      moodDisplay.textContent = "Tu es heureux 😄 !"
+    } else if (mood === 'sad') {
+      moodDisplay.textContent = "Tu es triste 😢."
+    } else if (mood === 'angry') {
+      moodDisplay.textContent = "Tu es énervé 😡 !!"
+    }
+  })
+})
 
 
 
