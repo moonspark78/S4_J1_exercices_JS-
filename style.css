@@ -115,6 +115,30 @@ button:hover {
 
 /* Exercice 3 - Simulateur d'humeur */
 /* TODO: Ajouter vos styles ici */
+.mood-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.mood-btn {
+  background-color: transparent; /* plus de fond */
+  border: 2px solid black;       /* bordure noire */
+  color: black;                  /* texte noir */
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button{
+  background-color: none !important;
+}
+
+#mood-display {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
 
 /* Exercice 4 - Contrôle de volume */
 /* TODO: Ajouter vos styles ici */

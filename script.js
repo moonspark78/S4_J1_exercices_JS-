@@ -31,6 +31,8 @@ button2.addEventListener('click', () => {
 // === Exercice 3 - Simulateur d'humeur ===
 // TODO:
 // 1. Cibler les boutons et la zone d'affichage
+const moodButtons = document.querySelectorAll('.mood-btn')
+const moodDisplay = document.querySelector('#mood-display')
 // 2. Ajouter des écouteurs d'événements sur chaque bouton
 // 3. Au clic, modifier le texte selon l'humeur sélectionnée
 
