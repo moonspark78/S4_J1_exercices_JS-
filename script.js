@@ -3,6 +3,8 @@
 // 1. Cibler le bouton et l'ampoule
 //    - Utiliser document.querySelector() pour sélectionner les éléments
 //    - Stocker les références dans des variables
+const button = document.querySelector('.switch-btn');
+const ampoule = document.querySelector('.light-bulb');
 // 2. Ajouter un écouteur d'événement sur le bouton
 //    - Utiliser addEventListener() avec l'événement 'click'
 // 3. Au clic, basculer la classe 'on' sur l'ampoule
